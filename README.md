@@ -11,13 +11,13 @@ No telemetry. No daemon. No privileged helper. No `sudo`.
 Node.js 20.10 or newer is required.
 
 ```bash
-npm install --global github:matheusmacedosantos/reclaim-mac
+npm install --global https://github.com/matheusmacedosantos/reclaim-mac/archive/refs/heads/main.tar.gz
 ```
 
-Or with pnpm:
+If the system-wide npm prefix is not writable, install into a user-owned prefix already on your `PATH`:
 
 ```bash
-pnpm add --global github:matheusmacedosantos/reclaim-mac
+npm install --global --prefix ~/.local https://github.com/matheusmacedosantos/reclaim-mac/archive/refs/heads/main.tar.gz
 ```
 
 Then run:
