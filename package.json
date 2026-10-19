@@ -1,0 +1,67 @@
+{
+  "name": "reclaim-mac",
+  "version": "0.1.0",
+  "description": "A cautious, Git-aware disk space analyzer and cleaner for macOS developer machines.",
+  "type": "module",
+  "bin": {
+    "reclaim-mac": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "config.example.json",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "node -e \"require('node:fs').rmSync('dist', { recursive: true, force: true })\"",
+    "dev": "tsx src/cli.ts",
+    "lint": "eslint .",
+    "prepare": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "macos",
+    "disk-cleaner",
+    "developer-tools",
+    "cli",
+    "cache",
+    "xcode",
+    "docker",
+    "git-worktree"
+  ],
+  "author": "matheusmacedosantos",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matheusmacedosantos/reclaim-mac.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matheusmacedosantos/reclaim-mac/issues"
+  },
+  "homepage": "https://github.com/matheusmacedosantos/reclaim-mac#readme",
+  "os": [
+    "darwin"
+  ],
+  "engines": {
+    "node": ">=20.10.0"
+  },
+  "dependencies": {
+    "@inquirer/checkbox": "^4.2.4",
+    "@inquirer/confirm": "^5.1.20",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^24.10.1",
+    "eslint": "^9.39.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.48.0",
+    "vitest": "^3.2.4"
+  }
+}

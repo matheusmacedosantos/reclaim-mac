@@ -1,0 +1,10 @@
+{
+  "roots": [
+    "~/Projects",
+    "~/Code"
+  ],
+  "protectedPaths": [
+    "~/Projects/example/unique-source",
+    "~/Projects/example/local-state"
+  ]
+}
