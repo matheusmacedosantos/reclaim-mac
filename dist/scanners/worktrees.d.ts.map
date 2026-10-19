@@ -1,0 +1,1 @@
+{"version":3,"file":"worktrees.d.ts","sourceRoot":"","sources":["../../src/scanners/worktrees.ts"],"names":[],"mappings":"AAIA,OAAO,KAAK,EAAE,YAAY,EAAE,MAAM,gBAAgB,CAAC;AAInD,OAAO,KAAK,EAAE,SAAS,EAAE,MAAM,aAAa,CAAC;AAW7C,wBAAsB,gBAAgB,CACpC,YAAY,EAAE,MAAM,EAAE,EACtB,GAAG,EAAE,YAAY,EACjB,eAAe,EAAE,MAAM,EACvB,cAAc,GAAE,MAAM,EAAO,GAC5B,OAAO,CAAC,SAAS,EAAE,CAAC,CAsEtB"}
